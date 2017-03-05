@@ -1,3 +1,7 @@
+# docker build -t burp .
+# sudo xhost +
+# docker run --network host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/dev/:/project -p 8080:8080 -it <name>
+
 FROM ubuntu:14.04
 
 RUN \
